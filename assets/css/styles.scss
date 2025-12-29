@@ -410,11 +410,13 @@ header {
 		}
 		&:nth-child(2) {
 			border-radius: 0 12px 0 0;
+
 			span {
 				&:nth-child(1) {
 					mask-image: url(../images/help-centre.svg);
 					width: 16px;
 					height: 16px;
+					min-height: 16px;
 					background: linear-gradient(
 						180deg,
 						rgb(166 218 255) 0%,
@@ -474,6 +476,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	padding-left: 140px;
+
 	p {
 		&:nth-child(1) {
 			line-height: 1.25;
@@ -487,6 +490,7 @@ header {
 				0 0 35px rgb(29 107 211 / 0.5);
 		}
 		&:nth-child(2) {
+			width: 440px;
 			margin-top: 8px;
 			font-size: 52px;
 			font-weight: 400;
@@ -1257,5 +1261,9 @@ footer {
 	}
 	.cards__block:last-child .cards__list {
 		grid-template-columns: repeat(7, 1fr);
+	}
+	.banner__content p:nth-child(2) {
+		width: 100%;
+		text-align: center;
 	}
 }

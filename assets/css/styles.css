@@ -355,6 +355,7 @@ header {
           mask-image: url(../images/help-centre.svg);
   width: 16px;
   height: 16px;
+  min-height: 16px;
   background: linear-gradient(180deg, rgb(166, 218, 255) 0%, rgb(48, 154, 241) 100%);
   -webkit-mask-size: 16px 16px;
           mask-size: 16px 16px;
@@ -419,6 +420,7 @@ header {
   text-shadow: 0 0 4px rgb(32, 118, 232), 0 0 16px rgb(29, 107, 211), 0 0 35px rgba(29, 107, 211, 0.5);
 }
 .banner__content p:nth-child(2) {
+  width: 440px;
   margin-top: 8px;
   font-size: 52px;
   font-weight: 400;
@@ -1082,5 +1084,9 @@ footer {
   }
   .cards__block:last-child .cards__list {
     grid-template-columns: repeat(7, 1fr);
+  }
+  .banner__content p:nth-child(2) {
+    width: 100%;
+    text-align: center;
   }
 }/*# sourceMappingURL=styles.css.map */
